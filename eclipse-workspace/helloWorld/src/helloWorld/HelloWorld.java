@@ -13,10 +13,10 @@ public class HelloWorld {
 		System.out.println(mesBonbons(12,32));
 		System.out.println("************");
 		
-		System.out.println(methodOne(6,'c'));
+		System.out.println(methodOne(6,'o'));
 		System.out.println("************");
 		
-		methodTwo(9);
+		methodTwo(3,9,'O');
 		System.out.println("************");
 		
 	}
@@ -48,12 +48,12 @@ public class HelloWorld {
      *     - prend deux entiers n et m, un caractère c
      *     - affiche sur la console un rectangle de n lignes, m colonnes, avec le caractère c
      */
-	public static void methodTwo(int m)
+	public static void methodTwo(int n,int m,char c)
 	{
 		String s = "";
 		for(int j=1;j<m;j++)
 		{
-			System.out.println(methodOne(8,'c'));
+			System.out.println(methodOne(n,c));
 		}
 	}
 	
