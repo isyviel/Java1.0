@@ -50,10 +50,11 @@ public class HelloWorld {
      */
 	public static void methodTwo(int n,int m,char c)
 	{
-		String s = "";
+		//permet d'éviter de répéter le calcul 5 fois, le faire une fois et répéter l'affichage 5 fois
+		String s = methodOne(m,c);
 		for(int j=1;j<=n;j++)
 		{
-			System.out.println(methodOne(m,c));
+			System.out.println(s);
 		}
 	}
 	
