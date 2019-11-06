@@ -18,6 +18,7 @@ public class HelloWorld {
 		
 		methodTwo(3,9,'O');
 		System.out.println("************");
+		SecondClass.triangle_public('n');
 		
 	}
 
