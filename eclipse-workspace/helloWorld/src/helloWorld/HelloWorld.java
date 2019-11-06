@@ -51,9 +51,9 @@ public class HelloWorld {
 	public static void methodTwo(int n,int m,char c)
 	{
 		String s = "";
-		for(int j=1;j<m;j++)
+		for(int j=1;j<=n;j++)
 		{
-			System.out.println(methodOne(n,c));
+			System.out.println(methodOne(m,c));
 		}
 	}
 	
