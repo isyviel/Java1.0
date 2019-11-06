@@ -4,69 +4,58 @@ public class HelloWorld {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println("Hello world!");
-		
-		//definir le type de la variable en meme temps que ca valeur
-		//forcer le type avec un cast mais doit rester logiquement faisable
-		
-		int variable = (int) 3.7;
-		float variable2 = 3;
-		double variable3 = 4.8;
-		
-		//ln dit va a la ligne
-		System.out.println(variable);
-		System.out.println("**********");
-		System.out.println(variable2);
-		System.out.println("**********");
-		System.out.println(variable3);
-		
-		for(int i=0;i<10;i++) {
-			System.out.println(i);
-		}
-		System.out.println("**********");
-		int i = 3;
-		while(i>0) {
-			System.out.println(i);
-			i--;
-		//d'abord je fais le corps de la boucle
-			// a la,fin de chaque tour de boucle je vais tester la condition
-		} do {
-			System.out.println(i);
-			i++;
-		} while(i < 5);
-		
-		int tableau[] = {0,1,2,3,4,5,6,7,8};
-		int somme = 0;
-		String avengers[] = {"Iron Man","Captain America","Loki","Docteur Strange","Hulk"};
-		
-		System.out.println("Tableau des multiplications");
-		System.out.println("**********");
-		
-		for (int j = 0; j < tableau.length-1; j++)
-		{
-			int oldValue = tableau[j];
-			int multi = tableau[j+1] * oldValue;
-			System.out.println(multi);
-		}
+		System.out.println("Hello world!");	
+		String mess = concat(5,"Bonjour");
+		System.out.println(mess);
+		System.out.println(concat(8,"Au revoir"));
 
-		System.out.println("Tableau des sommes");
-		System.out.println("**********");
+		System.out.println("************");
+		System.out.println(mesBonbons(12,32));
+		System.out.println("************");
 		
-		for (int j : tableau)
+		System.out.println(methodOne(6,'c'));
+		System.out.println("************");
+		
+		methodTwo(9);
+		System.out.println("************");
+		
+	}
+
+	public static String concat(int n, String s) {
+		return n + s;
+	}
+	
+	public static int mesBonbons(int panier, int chasse) {
+		return panier + chasse;
+	}
+	
+	/* Méthode :
+     *     - prend un entier n et un caractère c
+     *     - retourne une chaîne de caractères : répétition de n fois le caractère c
+     */
+	public static String methodOne(int n,char c)
+	{
+		String s = "";
+		for(int i = 1; i <= n; i++)
 		{
-			somme += j;
-			System.out.println(somme);
+			s += c;
 		}
-		System.out.println("**********");
-		System.out.println(somme);
-		System.out.println("**********");
-		for (int k = 0; k < avengers.length; k++)
+		return s;
+	}
+		
+    /*
+     * Méthode :
+     *     - prend deux entiers n et m, un caractère c
+     *     - affiche sur la console un rectangle de n lignes, m colonnes, avec le caractère c
+     */
+	public static void methodTwo(int m)
+	{
+		String s = "";
+		for(int j=1;j<m;j++)
 		{
-			if (avengers[k] == "Hulk")
-			{
-				System.out.println(avengers[k]);
-			}
+			System.out.println(methodOne(8,'c'));
 		}
 	}
 	
 }
+
