@@ -11,6 +11,12 @@ public class Voiture {
 	{
 		this.couleur = couleur;
 		nombre_voitures++;
-		System.out.println("je suis dans le constructeur de voiture");
+		System.out.println("Constructeur avec String");
+	}
+	
+	public Voiture() 
+	{
+		this("bleu");
+		System.out.println("Constructeur vide.");
 	}
 }
