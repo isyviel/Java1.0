@@ -20,6 +20,7 @@ public class Parking {
 		System.out.println(ouiOui.getCouleur());
 		
 		System.out.println(Voiture.getNombre());
+		System.out.println(Voiture.getRoue());
 		
 		batmobil.setRdispo(3);
 		System.out.println(batmobil.getRdispo());
@@ -31,7 +32,7 @@ public class Parking {
 		ouiOui.perdreRoue(1);
 		System.out.println(ouiOui.getRdispo());
 		System.out.println("********************");
-		System.out.println(Voiture.getRoue());
+		
 		
 		}
 }
